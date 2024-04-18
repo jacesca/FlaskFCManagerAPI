@@ -11,7 +11,7 @@ Features:
 - Fork the project into your GitHub
 - Clone it into your dektop
 ```
-https://github.com/jacesca/FlaskFCManagerAPI.git
+git clone https://github.com/jacesca/FlaskFCManagerAPI.git
 ```
 - Setup environment (it requires python3)
 ```
