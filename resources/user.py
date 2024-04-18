@@ -28,7 +28,7 @@ class UserList(MethodView):
         return UserModel.query.all()
 
 
-@blp.route("/register")
+@blp.route("/register/")
 class UserRegister(MethodView):
 
     @blp.arguments(UserSchema)
@@ -49,7 +49,7 @@ class UserRegister(MethodView):
         return {"message": "User created"}
 
 
-@blp.route("/login")
+@blp.route("/login/")
 class UserLogin(MethodView):
 
     @blp.arguments(UserSchema)
@@ -65,7 +65,7 @@ class UserLogin(MethodView):
         abort(401, message="Invalid credentials")
 
 
-@blp.route("/logout")
+@blp.route("/logout/")
 class UserLogout(MethodView):
 
     @jwt_required()
